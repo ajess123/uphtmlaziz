@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Formulir Registrasi</h2>
+
+<form action="proses_registrasi.php" method="POST">
+    <label for="nama">NAMA :</label>
+    <input type="text" id="nama" name="nama" required><br><br>
+
+    <label for="dd/yy/mm">TEMPAT TANGGAL LAHIR:</label>
+    <input type="dd/yy/mm" id="dd/yy/mm" name="dd/yy/mm" required><br><br>
+
+    <label for="password">SANDI:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="konfirmasi_password">KONFIRMASI SANDI:</label>
+    <input type="password" id="konfirmasi_password" name="konfirmasi_password" required><br><br>
+
+    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+    <label for="laki_laki">Laki-laki</label>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+    <label for="perempuan">Perempuan</label><br><br>
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+
+    <input type="submit" value="Daftar">
+    <p>sudah punya akun?</p>
+            <a href="index.html">login</a>
+            <p>
+</form>
+
+</body>
+</html>
